@@ -1,0 +1,203 @@
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0.3;
+    }
+    to {
+        opacity:1;
+    }
+}
+@media screen and (min-width: 769px) {
+
+    div.contain {
+        position: relative;
+        margin-left: 50%;
+        left: -1000px;
+        
+    }
+}
+body{
+   background-color: #F8CF0E;
+}
+
+.title{
+    margin: 20px auto;
+    width: 352px;
+    display:block;
+}
+
+/*북아메리카*/
+.north{
+    position: absolute;    
+    top: 50px;
+    left: 380px; 
+}
+.north:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/north_hover.png");
+}
+
+/*유럽*/
+.europe{
+    position: absolute;
+    top: 73px;
+    left: 916px;
+}
+.europe:hover{
+    
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/europe_hover.png");
+}
+
+
+/*아시아*/
+.asia{
+    position: absolute;
+    top: 50px;
+    left: 1053px;
+}
+.asia:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/asia_hover.png");
+}
+
+/*남아메리카*/
+.south{
+    position: absolute;
+    top: 308px;
+    left: 584px;
+}
+.south:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/south_hover.png");
+}
+
+
+/*아프리카*/
+.africa{
+    position: absolute;
+    top: 215px;
+    left: 870px;
+}
+.africa:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/africa_hover.png");
+}
+
+
+/*오세아니아*/ 
+.oceania{
+    position: absolute;
+    top: 395px;
+    left: 1430px;
+}
+.oceania:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/oceania_hover.png");
+}
+.logo_btn{
+    width : 47px;
+    height: 117px;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+}
+
+@media screen and (max-width: 768px) {
+body{
+    margin: 0px;
+}
+
+div.contain {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+}
+
+/*북아메리카*/
+.north{
+    position: absolute;    
+    top: 100px;
+    left: 80px; 
+}
+.north:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/north_hover.png");
+}
+
+/*유럽*/
+.europe{
+    position: absolute;
+    top: 123px;
+    left: 616px;
+}
+.europe:hover{
+    
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/europe_hover.png");
+}
+
+
+/*아시아*/
+.asia{
+    position: absolute;
+    top: 100px;
+    left: 753px;
+}
+.asia:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/asia_hover.png");
+}
+
+/*남아메리카*/
+.south{
+    position: absolute;
+    top: 358px;
+    left: 284px;
+}
+.south:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/south_hover.png");
+}
+
+
+/*아프리카*/
+.africa{
+    position: absolute;
+    top: 265px;
+    left: 570px;
+}
+.africa:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/africa_hover.png");
+}
+
+
+/*오세아니아*/
+.oceania{
+    position: absolute;
+    top: 445px;
+    left: 1130px;
+}
+.oceania:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../WorldMap/oceania_hover.png");
+}
+
+.logo_btn{
+    width : 57px;
+    height: 154px;
+    float: left;
+    top: 0px;
+    left: 0px;
+    margin: 18px 0px 0px 18px;
+    position: absolute;
+}
+
+.title{
+    margin: 20px auto;
+    width: 190px;
+    display:block;
+}
+
+}

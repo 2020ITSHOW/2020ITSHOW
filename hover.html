@@ -1,0 +1,266 @@
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<link rel="shortcut icon" href="https://www.e-mirim.hs.kr/favicon.ico">
+<style> 
+      html,body{
+          background-color: #f8cf0e;
+          padding:0;
+          margin:0;
+      }
+      .all_continent{
+          padding: 50;
+      }
+      .continent img{
+          position: absolute;       
+          float: left;
+      }
+    
+    
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    /*아시아*/
+    #asia {
+        left: 50%;
+        top: 30%;
+        width: 30em;
+    }
+
+    #asia img { 
+        left: 50%;
+        top: 30%;
+        width: 30em;  
+    }
+
+    #asia > #asiahover {                    
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    #asia:hover > #asiahover {
+        opacity: 1;
+    } 
+    #asiatext{
+        left:67%;
+        top:47%;
+        z-index: 1;
+    }
+    
+    /*유럽*/
+    #europe{
+        width: 15em;
+        left:39%;
+        top:23%;
+    }
+    #europe img{
+        width: 15em;
+        left:39%;
+        top:23%;
+    }
+    #europe > #europehover {                    
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    #europe:hover > #europehover {
+        opacity: 1;
+    }
+    #europetext{
+        left:47%;
+        top:37.2%;
+        z-index: 1;
+    }
+
+    /*아프리카*/
+    #africa{
+        width: 17em;
+        top: 48.5%;
+        left: 39%;
+    }
+    #africa img{
+        width: 17em;
+        top: 48.5%;
+        left: 39%;
+    }
+    #africa > #africahover{
+        opacity:0;
+        transition:opacity 1s;
+    }
+    #africa:hover > #africahover{
+        opacity:1;
+    }
+    #africatext{
+        left:47%;
+        top:60%;
+        z-index: 1;
+    }
+    
+    /*북아메리카*/
+    #n_america{
+        width: 20.5em;
+        left: 15%;
+        top:25%;
+    }
+    #n_america img{
+        width: 20.5em;
+        left: 15%;
+        top:25%;
+    }
+    #n_america > #n_americahover{
+        opacity:0;
+        transition:opacity 1s;
+    }
+    #n_america:hover > #n_americahover{
+        opacity:1;
+    }
+    #n_americatext{
+        left:25%;
+        top:46%;
+        z-index: 1;
+    }
+    
+    /*남아메리카*/
+    #s_america{
+        width: 12em;
+        left: 25%;
+        top: 57%;
+    }
+    #s_america img{
+        width: 12em;
+        left: 25%;
+        top: 57%;
+    }
+    #s_america > #s_americahover{
+        opacity:0;
+        transition:opacity 1s;
+    }
+    #s_america:hover > #s_americahover{
+        opacity:1;
+    }
+    #s_americatext{
+        left:31.8%;
+        top:70%;
+        z-index: 1;
+    }
+    
+    /*오세아니아*/
+    #oceania{
+        width: 15em;
+        left: 69.5%;
+        top: 65%;
+    }
+    #oceania img{
+        width: 15em;
+        left: 69.5%;
+        top: 65%;
+    }
+    #oceania > #oceaniahover{
+        opacity:0;
+        transition:opacity 1s;
+    }
+    #oceania:hover > #oceaniahover{
+        opacity:1;
+    }
+    #oceaniatext{
+        left:77%;
+        top:78.5%;
+        z-index: 1;
+    }
+    
+    
+    .text {
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    #title{
+        background-color: #181d61;
+        padding:5px;
+        color:#f8cf0e;
+        font-weight: bold;
+        font-size:150%;
+        margin-left: 45%;
+    }
+    #subtitle{
+        font-size: 130%;
+        text-align: center;
+    }
+    .logo_btn{
+            width : 42px;
+            height: 117px;
+            position: absolute;
+            top: 45px;
+            left: 45px;
+        }
+</style>
+</head>
+<body>
+
+        <div><a href="main.html"><img class="logo_btn" src="img/logo_btn.png"></a></div>
+<div class="all_continent">
+    <font id="title">Hello, World!</font>
+    <p id="subtitle">─<br>원하시는 대륙으로 여행을 떠나보세요!</p>
+    <a href="asia.html">
+    <div class="continent" id="asia">
+        <img src="mimg/asia_map.png">
+        <img id="asiahover" src="mimg/asia_hover.png">
+        <div class="text" id="asiatext">아시아</div>
+    </div>
+    </a>
+
+    <a href="europe.html">
+    <div class="continent" id="europe">
+        <img src="mimg/europe_map.png">
+        <img id="europehover" src="mimg/europe_hover.png">
+        <div class="text" id="europetext">유럽</div>
+    </div>
+    </a>
+    
+
+    <a href="africa.html">
+    <div class="continent" id="africa">
+        <img src="mimg/africa_map.png">
+        <img id="africahover" src="mimg/africa_hover.png">
+        <div class="text" id="africatext">아프리카</div>
+    </div>
+    </a>
+    
+    <a href="northAmerica.html">
+    <div class="continent" id="n_america">
+        <img src="mimg/northamerica_map.png">
+        <img id="n_americahover" src="mimg/north_hover.png">
+        <div class="text" id="n_americatext">북아메리카</div>
+    </div>
+    </a>
+
+    <a href="southamerica.html">
+    <div class="continent" id="s_america">
+        <img src="mimg/southamerica_map.png">
+        <img id="s_americahover" src="mimg/south_hover.png">
+        <div class="text" id="s_americatext">남아메리카</div>
+    </div>
+    </a>
+    
+    <a href="oceania.html">
+    <div class="continent" id="oceania">
+        <img src="mimg/oceania_map.png">
+        <img id="oceaniahover" src="mimg/oceania_hover.png">
+        <div class="text" id="oceaniatext">오세아니아</div>
+    </div>
+    </a>
+</div>
+</body>
