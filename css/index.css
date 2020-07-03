@@ -1,3 +1,7 @@
+body {
+  background-color: #003cb5;
+}
+
 .header {
   margin: 30px 50px 0px 50px;
   padding: 0px;
@@ -44,6 +48,7 @@
 
 .container-fluid {
   margin-top: 200px;
+  padding: 0;
 }
 
 .show_img {
@@ -76,14 +81,14 @@
 }
 
 .title {
-  background-color: #f9cf0e;
+  background-color: #00f393;
   padding: 2px;
-  color: #181d61;
+  color: #003cb5;
   font-weight: bold;
   font-size: 120%;
 }
 .way {
-  color: #f9cf0e;
+  color: #00f393;
   font-size: 15px;
 }
 
