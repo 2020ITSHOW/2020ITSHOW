@@ -1,11 +1,26 @@
+@media screen and (min-width: 1126px) {
+  .float-right {
+    background-color: black;
+    margin-top: 130px;
+    width: 13%;
+    height: 120px;
+    margin-right: 0px;
+  }
+
+  .menu {
+    margin-left: 20%;
+  }
+}
+
 body {
   background-color: #003cb5;
+  min-width: 670px;
 }
 
 .header {
-  margin: 30px 50px 0px 50px;
+  margin: 30px 0px 0px 45px;
   padding: 0px;
-  height: 255px;
+  height: 245px;
 }
 
 .header > div {
@@ -13,41 +28,32 @@ body {
 }
 
 .logo {
-  margin-top: 20px;
+  margin-top: 15px;
+
   height: 235px;
 }
 
 .show_term {
-  width: 13%;
-  height: 120px;
+  width: 12%;
+  min-width: 150px;
+  height: 100px;
   background-color: black;
   margin-left: 20px;
   vertical-align: top;
 }
 
-.menu {
-  margin-left: 300px;
-}
-
 .dev_menu,
 .des_menu {
   display: inline-block;
-  margin: 10px;
-  margin-top: 100px;
+  margin: 20px;
+  margin-top: 60px;
   width: 200px;
-  height: 200px;
+  height: 190px;
   background-color: black;
-}
-
-.rounded.float-right {
-  background-color: black;
-  margin-top: 130px;
-  width: 13%;
-  height: 120px;
 }
 
 .container-fluid {
-  margin-top: 200px;
+  margin-top: 80px;
   padding: 0;
 }
 
@@ -61,22 +67,27 @@ body {
   display: flex;
   flex-direction: row;
   margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  width: 80%;
+  margin-top: 150px;
+  margin-bottom: 180px;
+  width: 100%;
 }
 
 #map {
-  width: 50%;
+  max-width: 400px;
+  width: 40%;
   height: 400px;
-  margin: 50px 30px;
+  margin: auto 0px auto auto;
 }
 
 .way_info {
-  margin-top: 50px;
+  margin: 50px auto auto 3%;
 }
 
-.way_info > div {
+.place {
+  width: 168.5px;
+}
+
+.way_info > div > div {
   margin: 10px;
 }
 
@@ -94,4 +105,149 @@ body {
 
 footer {
   background-color: #242424;
+}
+
+td > div {
+  display: inline-block;
+}
+
+.social {
+  width: 20%;
+}
+
+.social > a > img {
+  width: 20%;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 1125px) {
+  .float-right {
+    display: none;
+  }
+
+  .menu {
+    float: right;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 670px) and (max-width: 1024px) {
+  #map {
+    width: 100%;
+  }
+  .way_info > div {
+    display: block;
+  }
+
+  .dev_menu,
+  .des_menu {
+    display: inline-block;
+    margin: 20px;
+    margin-top: 60px;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+  }
+}
+@media screen and (max-width: 885px) {
+  .logo {
+    width: 55%;
+    height: auto;
+  }
+  .show_term {
+    width: 0;
+    min-width: 0;
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .show_term {
+    width: 0;
+    min-width: 0;
+    height: 0;
+  }
+
+  .dev_menu,
+  .des_menu {
+    display: inline-block;
+    margin: 20px;
+    margin-top: 60px;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+  }
+  .comming {
+    display: block;
+    width: 70%;
+    margin-bottom: 100px;
+  }
+  #map {
+    margin: auto;
+    width: 100%;
+  }
+
+  .way_info {
+    margin-right: auto;
+    width: 100%;
+  }
+  .place {
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+  }
+
+  .social {
+    width: 100%;
+  }
+
+  .icon_img {
+    margin-top: 2%;
+  }
+}
+
+@media only screen and (max-device-width: 812px) {
+  .float-right {
+    display: none;
+  }
+  .menu {
+    margin-left: 10%;
+  }
+
+  .way_info {
+    margin: 30px 0 0 0;
+    width: 100%;
+  }
+
+  .way_info > div {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
+
+  .title {
+    font-size: 110%;
+  }
+
+  .footer {
+    width: 90%;
+  }
+
+  .icon_img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+  }
+
+  .social > a > img {
+    display: none;
+  }
+
+  /* td > div:nth-child(6),
+  td > div:nth-child(7) { */
+  td > p:nth-child(5),
+  td > div:nth-child(6),
+  td > div:nth-child(7) {
+    display: none;
+  }
 }
