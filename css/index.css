@@ -63,6 +63,12 @@ body {
   background-color: black;
 }
 
+.promotion {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 .comming {
     display: flex;
     flex-direction: row;
