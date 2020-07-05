@@ -1,0 +1,13 @@
+/* 링크 초기화 */
+a {
+    color:#222;
+    text-decoration: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'NanumSquare', sans-serif;
+    word-break: keep-all;
+}

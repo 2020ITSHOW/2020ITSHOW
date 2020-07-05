@@ -1,135 +1,174 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      2020 it is IT
-    </title>
-    <meta charset="utf8" />
-    <link rel="shortcut icon" href="https://www.e-mirim.hs.kr/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="https://www.e-mirim.hs.kr/favicon.ico">
 
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.12.0/themes/redmond/jquery-ui.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
-    ></script>
-    <!-- icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/div-awesome/4.7.0/css/div-awesome.min.css"
-    />
+        <title>2020 it is IT</title>
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/slide.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- start of header -->
+            <div class="header">
+                <div class="logo">
+                    <img src="images/itisit.png">
+                </div>
 
-    <!-- my.css -->
-    <link rel="stylesheet" href="css/index.css" type="text/css" />
-  </head>
-  <body>
-    <div class="header">
-      <div class="rounded float-left">
-        <img class="logo" src="./images/itisit.png" />
-      </div>
-      <div class="show_term"></div>
+                <div class="date">
+                    <img src="images/date.png">
+                </div>
 
-      <div class="menu">
-        <div class="dev_menu"></div>
-        <div class="des_menu"></div>
-      </div>
+                <div class="menu">
+                    <table>
+                        <tr>
+                            <td><img src="images/move_dev.png" class="move_dev"></td>
+                            <td><img src="images/move_des.png" class="move_des"></td>
+                        </tr>
+                    </table>
+                </div>
 
-      <div class="float-right"></div>
-    </div>
-    <div class="container-fluid">
-      <div class="show_img"></div>
-
-      <div class="comming">
-        <div id="map"></div>
-        <div class="way_info">
-          <div class="place">
-            <div class="title">장소</div>
-            <div class="way">이사장실<br />다목적실</div>
-          </div>
-          <div class="place">
-            <div class="title">지하철 - 버스</div>
-            <div class="way">2호선 신림역 3번 출구<br />152, 5522 이용</div>
-          </div>
-          <div class="place">
-            <div class="title">버스</div>
-            <div class="way">152, 5522, 5517, 6515</div>
-          </div>
-          <div class="place">
-            <div class="title">인근주요도로</div>
-            <div class="way">
-              강남순환고속도로<br />안양성남고속도로<br />남부순환고속도로
+                <div class="job">
+                    <img src="images/job.png">
+                </div>
             </div>
-          </div>
+            <!-- end of header -->
+
+            <!-- start of slideshow -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./images/slide1.png" style="width:100%" id="slide1">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="./images/slide2.png" style="width:100%" id="slide2">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="./images/slide3.png" style="width:100%" id="slide3">
+                </div>
+                
+                <div style="margin: 20px; text-align:center;">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+            </div>
+            <!-- end of slideshow -->
+
+            <!-- start of comming -->
+            <div class="comming">
+                <div id="map"></div>
+                <div class="info">
+                    <div class="place">
+                        <span class="title">장소</span>
+                        <p>
+                            <span class="way">이사장실<br>다목적실</span>
+                        </p>
+                    </div>
+                    <div class="place">
+                        <span class="title">지하철 - 버스</span>
+                        <p>
+                            <span class="way">2호선 신림역 3번 출구<br>152, 5522 이용</span>
+                        </p>
+                    </div>
+                    <div class="place">
+                        <span class="title">버스</span>
+                        <p>
+                            <span class="way">152, 5522, 5517, 6515</span>
+                        </p>
+                    </div>
+                    <div class="place">
+                        <span class="title">인근주요도로</span>
+                        <p>
+                            <span class="way">강남순환고속도로<br>안양성남고속도로<br>남부순환고속도로</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of comming -->
+
+            <!-- start of footer -->
+            <footer style="padding: 2%;">
+                <table class="footer" align="center">
+                    <tr class="footer_tr">
+                        <td class="icon">
+                            <img src="images/logo.png" width="23%">
+                            <p></p>
+                        </td>
+                        <td class="social">
+                            <a href="https://www.facebook.com/2020itisit/">
+                                <img src="images/facebook.png">
+                            </a>&nbsp;
+                            <a href="https://www.e-mirim.hs.kr/main.do">
+                                <img src="images/mirim.png">
+                            </a>&nbsp;
+                            <a href="https://www.facebook.com/24mirimcouncil/">
+                                <img src="images/council.png">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="color: #fff;">
+                            서울시 관악구 호암로 546 미림여자정보과학고등학교<br>
+                            <b>대표전화&nbsp;</b>02-872-4072&nbsp;&nbsp;&nbsp;
+                            <b>대외협력부&nbsp;</b>02-888-8350&nbsp;&nbsp;&nbsp;
+                            <b>진로체험문의&nbsp;</b>070-5099-8318
+                            <p>
+                                <div>
+                                    <b>디자인 및 개발&nbsp;</b>29기 학생회
+                                </div>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
+            <!-- end of footer -->
         </div>
-      </div>
-    </div>
 
-    <footer style="padding: 2%;">
-      <table class="footer" align="center" width="60%">
-        <tr class="footer_tr">
-          <td class="icon" width="80%">
-            <img class="icon_img" src="images/logo.png" width="23%" />
-            <p></p>
-          </td>
+        <script>
+            var slideIndex = 0;
+            showSlides();
 
-          <td class="social">
-            <a href="https://www.facebook.com/2019mirimit/" target="_blank"
-              ><img src="images/facebook.png" width="33px"
-            /></a>
-            <a href="https://www.e-mirim.hs.kr/main.do" target="_blank"
-              ><img src="images/mirim.png" width="35px" /></a
-            >&nbsp;
-            <a href="https://www.facebook.com/24mirimcouncil/" target="_blank"
-              ><img src="images/council.png" width="30px"
-            /></a>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" style="color: white;">
-            서울시 관악구 호암로 546 미림여자정보과학고등학교<br />
-            <div><b>대표전화 </b>02-872-4072</div>
-            &nbsp;&nbsp;&nbsp;
-            <div><b>대외협력부 </b>02-888-8350</div>
-            &nbsp;&nbsp;&nbsp;
-            <div><b>진로체험문의 </b>070-5099-8318</div>
-            <p>
-              <div><b>디자인 및 개발</b> 29기 학생회</div>
-            </p>
-          </td>
-        </tr>
-      </table>
-    </footer>
-  </body>
-  <script>
-    function initMap() {
-      // The location of Uluru
-      var uluru = { lat: 37.466456, lng: 126.932867 };
-      // The map, centered at Uluru
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
-        center: uluru,
-      });
-      // The marker, positioned at Uluru
-      var marker = new google.maps.Marker({ position: uluru, map: map });
-    }
-  </script>
-  <script
-    async
-    defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD46cobm1FQ_Kh26-cZkmLo1fZJ3tv9o90&callback=initMap"
-  ></script>
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+
+            function initMap() {
+                // The location of Uluru
+                var uluru = { lat: 37.466456, lng: 126.932867 };
+                // The map, centered at Uluru
+                var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: uluru,
+                });
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({ position: uluru, map: map });
+            }
+        </script>
+        <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD46cobm1FQ_Kh26-cZkmLo1fZJ3tv9o90&callback=initMap"
+        ></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </body>
 </html>
