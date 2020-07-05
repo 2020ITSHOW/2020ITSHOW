@@ -1,268 +1,214 @@
-@media screen and (min-width: 1126px) {
-  .float-right {
-    background-color: black;
-    margin-top: 130px;
-    width: 13%;
-    height: 120px;
-    margin-right: 0px;
-  }
-
-  .menu {
-    margin-left: 20%;
-  }
-}
-
 body {
-  background-color: #003cb5;
-  min-width: 670px;
+    background-color: #003cb5;
 }
 
+
+/* header */
 .header {
-  margin: 30px 0px 0px 45px;
-  padding: 0px;
-  height: 245px;
+    position: relative;
+    width: 100%;
+    height: 50vh;
 }
 
-.header > div {
-  display: inline-block;
+.header div {
+    position: absolute;
 }
 
-.logo {
-  margin-top: 15px;
-
-  height: 235px;
+.header .logo {
+    left: 50px;
+    top: 50%;
+    transform: translateY(-55%);
 }
 
-.show_term {
-  width: 12%;
-  min-width: 150px;
-  height: 100px;
-  background-color: black;
-  margin-left: 20px;
-  vertical-align: top;
+.header .date {
+    left: 150px;
+    top: 10%;
 }
 
-.dev_menu,
-.des_menu {
-  display: inline-block;
-  margin: 20px;
-  margin-top: 60px;
-  width: 200px;
-  height: 190px;
-  background-color: black;
+.header .menu {
+    left: 50%;
+    top: 50%;
+    transform: translate(-10%, -50%);
 }
 
-.container-fluid {
-  margin-top: 80px;
-  padding: 0;
+.header .menu .move_dev, .header .menu .move_des {
+    padding: 10px;
 }
 
-.show_img {
-  width: 100%;
-  height: 380px;
-  background-color: black;
+.header .move_dev {
+    left: 40%;
 }
 
-.promotion {
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
+.header .move_des {
+    left: 60%;
 }
 
+.header .job {
+    right: 30px;
+    top: 50%;
+}
+
+.header .logo img {
+    width: 84px;
+    height: 234px;
+}
+
+.header .date img {
+    width: 160px;
+}
+
+.header .menu img {
+    width: 195px;
+}
+
+.header .job img {
+    width: 80px;
+}
+
+
+/* comming */
 .comming {
     display: flex;
-    flex-direction: row;
-    margin: auto;
-    margin-bottom: 180px;
-    width: 800px
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
 }
 
 #map {
-    max-width: 400px;
     width: 400px;
     height: 400px;
 }
 
-.way_info {
-    margin: auto 25px;
-}
-
-.place {
-  width: 168.5px;
-}
-
-.way_info > div > div {
-  margin: 10px;
+.info {
+    margin: 27px;
 }
 
 .title {
-  background-color: #00f393;
-  padding: 2px;
-  color: #003cb5;
-  font-weight: bold;
-  font-size: 120%;
+    color: #003cb5;
+    background-color: #00f393;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 2px;
 }
 
 .way {
-  color: #00f393;
-  font-size: 15px;
+    color: #00f393;
 }
 
+
+
+/* footer */
 footer {
-  background-color: #242424;
+    background: #242424;
 }
 
-td > div {
-  display: inline-block;
+.footer {
+    width: 60%;
 }
 
-.social {
-  width: 20%;
+.social img {
+    height: 30px;
 }
 
-.social > a > img {
-  width: 20%;
-  margin-left: 5%;
-}
+@media screen and (max-width: 768px) {
+    .header {
+        height: 35vh;
+    }
 
-@media screen and (max-width: 1125px) {
-  .float-right {
-    display: none;
-  }
+    .header .logo {
+        left: unset;
+        top: unset;
+        transform: unset;
+    }
 
-  .menu {
-    float: right;
-    margin-right: 10%;
-  }
-}
+    .header .menu {
+        transform: translate(-20%, -50%);
+    }
 
-@media only screen and (min-width: 671px) and (max-width: 1024px) {
-  #map {
-    width: 100%;
-  }
-  .way_info > div {
-    display: block;
-  }
+    .header .menu .move_dev, .header .menu .move_des {
+        padding: unset;
+    }
 
-  .dev_menu,
-  .des_menu {
-    display: inline-block;
-    margin: 20px;
-    margin-top: 60px;
-    width: 180px;
-    height: 180px;
-    background-color: black;
-  }
-}
-@media screen and (max-width: 885px) {
-  .logo {
-    width: 55%;
-    height: auto;
-  }
-  .show_term {
-    width: 0;
-    min-width: 0;
-    height: 0;
-  }
+    .header .logo img {
+        width: 57px;
+        height: 154px;
+        position: static;
+        float: left;
+        top: 0px;
+        left: 0px;
+        margin: 16px 50px 20px 16px;
+    }
 
-  .dev_menu,
-  .des_menu {
-    display: inline-block;
-    margin: 20px;
-    margin-top: 60px;
-    width: 150px;
-    height: 150px;
-    background-color: black;
-  }
-}
+    .header .date img {
+        display: none;
+    }
 
-@media screen and (max-width: 670px) {
-  .show_term {
-    width: 0;
-    min-width: 0;
-    height: 0;
-  }
+    .header .menu img {
+        width: 95px;
+    }
 
-  .dev_menu,
-  .des_menu {
-    display: inline-block;
-    margin: 20px;
-    margin-top: 60px;
-    width: 150px;
-    height: 150px;
-    background-color: black;
-  }
-  .comming {
-    display: block;
-    width: 70%;
-    margin-bottom: 100px;
-  }
-  #map {
-    margin: auto;
-    width: 100%;
-  }
+    .header .job img {
+        display: none;
+    }
 
-  .way_info {
-    margin-right: auto;
-    width: 100%;
-  }
-  .place {
-    display: inline-block;
-    width: 47%;
-    vertical-align: top;
-  }
+    #slide1 {
+        content: url(../images/slide1_size.jpg);
+    }
 
-  .social {
-    width: 100%;
-  }
+    #slide2 {
+        content: url(../images/slide2_size.jpg);
+    }
 
-  .icon_img {
-    margin-top: 2%;
-  }
-}
+    #slide3 {
+        content: url(../images/slide3_size.jpg);
+    }
 
-@media only screen and (max-device-width: 812px) {
-  .float-right {
-    display: none;
-  }
-  .menu {
-    margin-left: 10%;
-  }
+    .comming {
+        display: block;
+        margin: auto;
+        width: 300px;
+        margin-top: 60px;
+    }
 
-  .way_info {
-    margin: 30px 0 0 0;
-    width: 100%;
-  }
+    #map {
+        width: 300px;
+        height: 200px;
+    }
 
-  .way_info > div {
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
-  }
+    .info {
+        margin-left: 10px;
+    }
 
-  .title {
-    font-size: 110%;
-  }
+    .title {
+        font-size: 90%;
+    }
 
-  .footer {
-    width: 90%;
-  }
+    .way {
+        font-size: 13px;
+    }
 
-  .icon_img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 40%;
-  }
+    footer {
+        font-size: 11px;
+    }
 
-  .social > a > img {
-    display: none;
-  }
+    .footer {
+        width: 80%;
+    }
 
-  /* td > div:nth-child(6),
-  td > div:nth-child(7) { */
-  td > p:nth-child(5),
-  td > div:nth-child(6),
-  td > div:nth-child(7) {
-    display: none;
-  }
+    .footer_tr {
+        height: 80px;
+    }
+
+    .icon {
+        width: 60%;
+    }
+
+    .icon img {
+        width: 50%;
+    }
+
+    .social img {
+        height: 23px;
+    }
 }
