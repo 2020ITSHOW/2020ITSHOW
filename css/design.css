@@ -1,185 +1,190 @@
 body {
     min-width: 670px;
-  }
+}
   
-  .header {
+.header {
     margin: 45px 25px 0px 45px;
     padding: 0px;
     height: 320px;
-  }
-  
-  .header > div {
+}
+
+.header > div {
     display: inline-block;
-  }
-  
-  .rounded.float-left {
+}
+
+.rounded.float-left {
     margin-right: 8%;
-  }
-  
-  .logo {
+}
+
+.logo {
     height: 235px;
-  }
-  
-  .menu {
+}
+
+.menu {
     display: flex;
     flex-direction: row;
     margin: 0 10%;
     width: 50%;
     height: auto;
-  }
-  
-  .map_menu {
+}
+
+.map_menu {
     margin: 0 auto;
     height: 300px;
     background-color: black;
     display: inline-block;
     width: 59%;
-  }
-  
-  .own_menu {
+}
+
+.own_menu {
     margin: 0 auto;
     height: 300px;
     background-color: black;
     display: inline-block;
     width: 39%;
-  }
-  
-  .rounded.float-right {
+}
+
+.rounded.float-right {
     width: 8%;
-  }
-  
-  .rounded.float-right > div {
+}
+
+.rounded.float-right > div {
     margin-bottom: 30%;
-  }
-  
-  .rounded.float-right > div > img {
+}
+
+.rounded.float-right > div > img {
     max-width: 80px;
     width: 80%;
-  }
-  
-  .container {
-    padding-top: 50px;
-    width: 100%;
-    height: 100%;
-  }
+}
 
-  .box{
-      text-align: center;
-      border:1px solid yellow;
-  }
-  
-  footer {
+.container {
+    width: unset;
+    padding: unset;
+}
+
+.box{
+    text-align: center;
+}
+
+footer {
     background-color: #242424;
     margin-top: 100px;
-  }
-  
-  td > div {
+}
+
+td > div {
     display: inline-block;
-  }
-  
-  .social {
+}
+
+.social {
     width: 20%;
-  }
-  
-  .social > a > img {
+}
+
+.social > a > img {
     width: 20%;
     margin-left: 5%;
-  }
-  
-  @media screen and (max-width: 1265px) {
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1265px) {
     .header {
-      margin-right: 2%;
+        margin-right: 2%;
     }
-  
+
     .work_info > div {
-      display: block;
+        display: block;
     }
-  
+
     .informations {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .team > div {
-      display: inline-block;
-      margin-right: 20px;
+        display: inline-block;
+        margin-right: 20px;
     }
-  
+
     .team {
-      width: 100%;
-      border: none;
-      margin: 0;
-      padding: 20px;
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 20px;
     }
-  }
-  
-  @media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 992px) {
     .header {
-      margin: 45px 25px 0px 25px;
-      padding: 0px;
-      height: 200px;
+        margin: 45px 25px 0px 25px;
+        padding: 0px;
+        height: 200px;
     }
     .rounded.float-left {
-      width: 57px;
-      height: auto;
+        width: 57px;
+        height: auto;
     }
-  
+
     .logo {
-      width: 57px;
-      height: auto;
+        width: 57px;
+        height: auto;
     }
-  
+
     .menu {
-      height: 100%;
+        height: 100%;
     }
-  
+
     .menu > div {
-      height: 100%;
+        height: 100%;
     }
-  
+
     .rounded.float-right > div > img {
-      width: 50px;
+        width: 50px;
     }
-  
+
     .rounded.float-right > div {
-      margin-bottom: 15px;
+        margin-bottom: 15px;
     }
-  
+
     .informations {
-      padding: 15px 15px 0 15px;
+        padding: 15px 15px 0 15px;
     }
-  
+
     .team {
-      padding: 15px;
+        padding: 15px;
     }
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .work {
-      width: 100%;
-      flex-direction: column;
-      min-width: 0;
+        width: 100%;
+        flex-direction: column;
+        min-width: 0;
     }
-  
+
     .pannel {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .info {
-      width: 100%;
-      margin-top: 10px;
+        width: 100%;
+        margin-top: 10px;
     }
-  }
-  
-  @media screen and (max-device-width: 1024px) {
+}
+
+@media screen and (max-device-width: 1024px) {
     .informations {
-      font-size: 25px;
+        font-size: 25px;
     }
-  
+
     .team {
-      font-size: 18px;
+        font-size: 18px;
     }
-  
+
     .team > div {
-      width: 45%;
+        width: 45%;
     }
-  }
+}
