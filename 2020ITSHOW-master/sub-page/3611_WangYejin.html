@@ -31,20 +31,57 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
         <!-- my.css -->
-        <link rel="stylesheet" href="../css/design.css" type="text/css"/>
+        <link rel="stylesheet" href="../../css/design.css" type="text/css"/>
     </head>
-    <body>
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 box"><img src="../images/design/web/6/3611_01.jpg" alt="3611"></div>
-                <div class="col-md-12 box"><img src="../images/design/web/6/3611_02.jpg" alt="3611"></div>
-                <div class="col-md-12 box"><img src="../images/design/web/6/3611_03.jpg" alt="3611"></div>
-                <div class="col-md-12 box"><img src="../images/design/web/6/3611_04.jpg" alt="3611"></div>
-                <div class="col-md-12 box"><img src="../images/design/web/6/3611_05.jpg" alt="3611"></div>
-            </div>
-        </div>
+    <style>
+        .sub img {
+            width: 900px;
+            height: 900px;
+        }
 
-        
+        .row {
+            display: unset;
+            margin-right: unset;
+            margin-left: unset;
+        }
+
+        .col-md-12 {
+            padding-left: unset;
+            padding-right: unset;
+        }
+
+        .video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            height: 500px;
+            margin: 0 auto;
+        }
+    </style>
+    <body onload="add()">
+        <div class="container">
+            <div class="row"></div>
+        </div>
     </body>
+    <script>
+
+        function add() {
+            var cnt = 5;
+            var num = 3611;
+            var form = '.jpg';
+            var sub;
+
+            for(var i = 0; i < cnt; i++) {
+                if(i < 9) {
+                    sub = $('<div class="col-md-12 box sub"><img src="../../images/design/web/6/' + num + '_0' + (i + 1) + form + '" alt="' + num +'"></div>');
+                } else {
+                    sub = $('<div class="col-md-12 box sub"><img src="../../images/design/web/6/' + num + '_' + (i + 1) + form + '" alt="' + num +'"></div>');
+                }
+
+                $(".row").append(sub);
+            }
+        }
+
+    </script>
 </html>

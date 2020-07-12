@@ -31,77 +31,57 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
         <!-- my.css -->
-        <link rel="stylesheet" href="../css/design.css" type="text/css"/>
+        <link rel="stylesheet" href="../../css/design.css" type="text/css"/>
     </head>
-    <body>
-        <!-- <div class="header">
-            <div class="rounded float-left">
-                <img class="logo" src="../images/logo_btn.png"/>
-            </div>
+    <style>
+        .sub img {
+            width: 900px;
+            height: 900px;
+        }
 
-            <div class="menu">
-                <div class="map_menu"></div>
-                <div class="own_menu"></div>
-            </div>
+        .row {
+            display: unset;
+            margin-right: unset;
+            margin-left: unset;
+        }
 
-            <div class="rounded float-right">
-                <div class="design_show">
-                    <img src="../images/map_btn.png"/>
-                </div>
-                <div class="go_main"><img src="../images/map_btn.png"/></div>
-            </div>
-        </div> -->
+        .col-md-12 {
+            padding-left: unset;
+            padding-right: unset;
+        }
 
+        .video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            height: 500px;
+            margin: 0 auto;
+        }
+    </style>
+    <body onload="add()">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 box"><img src="../images/design/web/6/3602_01.jpg" alt="3602"></div>
-                <div class="col-md-12 box"><img src="../images/design/web/6/3602_02.jpg" alt="3602"></div>
-                <div class="col-md-12 box"><img src="../images/design/web/6/3602_03.jpg" alt="3602"></div>
-                <div class="col-md-12 box"><img src="../images/design/web/6/3602_04.jpg" alt="3602"></div>
-                <div class="col-md-12 box"><img src="../images/design/web/6/3602_05.jpg" alt="3602"></div>
-                <div class="col-md-12 box"><img src="../images/design/web/6/3602_06.jpg" alt="3602"></div>
-                <div class="col-md-12 box"><img src="../images/design/web/6/3602_07.jpg" alt="3602"></div>
-
-            </div>
+            <div class="row"></div>
         </div>
-
-        <!-- <footer style="padding: 2%;">
-            <table class="footer" align="center" width="60%">
-                <tr class="footer_tr">
-                    <td class="icon" width="80%">
-                        <img class="icon_img" src="../images/logo.png" width="23%"/>
-                        <p></p>
-                    </td>
-
-                    <td class="social">
-                        <a href="https://www.facebook.com/2019mirimit/" target="_blank"><img src="../images/facebook.png" width="33px"/></a>
-                        <a href="https://www.e-mirim.hs.kr/main.do" target="_blank"><img src="../images/mirim.png" width="35px"/></a >&nbsp;
-                        <a href="https://www.facebook.com/24mirimcouncil/" target="_blank"><img src="../images/council.png" width="30px"/></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="color: white;">
-                        서울시 관악구 호암로 546 미림여자정보과학고등학교<br/>
-                        <div>
-                            <b>대표전화
-                            </b>02-872-4072</div>
-                        &nbsp;&nbsp;&nbsp;
-                        <div>
-                            <b>대외협력부
-                            </b>02-888-8350</div>
-                        &nbsp;&nbsp;&nbsp;
-                        <div>
-                            <b>진로체험문의
-                            </b>070-5099-8318</div>
-                        <p>
-                            <div>
-                                <b>디자인 및 개발</b>
-                                29기 학생회</div>
-
-                        </p>
-                    </td>
-                </tr>
-            </table>
-        </footer> -->
     </body>
+    <script>
+
+        function add() {
+            var cnt = 7;
+            var num = 3602;
+            var form = '.jpg';
+            var sub;
+
+            for(var i = 0; i < cnt; i++) {
+                if(i < 9) {
+                    sub = $('<div class="col-md-12 box sub"><img src="../../images/design/web/6/' + num + '_0' + (i + 1) + form + '" alt="' + num +'"></div>');
+                } else {
+                    sub = $('<div class="col-md-12 box sub"><img src="../../images/design/web/6/' + num + '_' + (i + 1) + form + '" alt="' + num +'"></div>');
+                }
+
+                $(".row").append(sub);
+            }
+        }
+
+    </script>
 </html>
