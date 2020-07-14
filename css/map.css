@@ -1,0 +1,124 @@
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0.3;
+    }
+    to {
+        opacity:1;
+    }
+}
+@media screen and (min-width: 769px) {
+
+    div.contain {
+        position: relative;
+        margin-left: 50%;
+        left: -1000px;
+        width: 100px;  
+        
+    }
+}
+body{
+   background-image: url(../map/board.png);
+}
+
+.title{
+    margin: 20px auto;
+    width: 352px;
+    display:block;
+}
+
+/*회전목마*/
+.merry-go-round{
+    position: absolute;  
+    width: 160px;  
+    top: 248px;
+    left: 505px; 
+}
+.merry-go-round:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../Map/horse_hover.png");
+}
+
+/*사파리*/
+.sapari-world{
+    position: absolute;
+    width: 170px;  
+    top: 550px;
+    left: 448px;
+}
+.sapari-world:hover{
+    
+    -webkit-animation: fadein 1.3s;
+    content:url("../Map/safari_hover.png");
+}
+
+
+/*T-express*/
+.T-express{
+    position: absolute;
+    width: 170px;  
+    top: 693px;
+    left: 760px;
+}
+.T-express:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../Map/t-express_hover.png");
+}
+
+/*rolling-x-train*/
+.rolling-x-train{
+    position: absolute;
+    width: 170px;  
+    top: 695px;
+    left: 1115px;
+}
+.rolling-x-train:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../Map/rolling_hover.png");
+}
+
+
+/*thunder-falls*/
+.thunder-falls{
+    position: absolute;
+    width: 170px;  
+    top: 555px;
+    left: 1390px;
+}
+.thunder-falls:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../map/thunder_hover.png");
+}
+
+
+/*lost-valley*/ 
+.lost-valley{
+    position: absolute;
+    width: 170px;  
+    top: 415px;
+    left: 1115px; 
+}
+.lost-valley:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../map/lostvalley_hover.png");
+}
+
+/*horror-maze*/ 
+.horror-maze{
+    position: absolute;
+    width: 170px;  
+    top: 410px;
+    left: 760px; 
+}
+.horror-maze:hover{
+    -webkit-animation: fadein 1.3s;
+    content:url("../map/horrormaze_hover.png");
+}
+
+
+.logo_btn{
+    width : 47px;
+    height: 117px;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+}
