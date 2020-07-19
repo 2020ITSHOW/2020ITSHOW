@@ -29,17 +29,15 @@ body {
 }
 
 .map_menu {
-    margin: 0 auto;
-    height: 300px;
-    background-color: black;
+    margin: 50px auto;
+    margin-left: 50px;
     display: inline-block;
-    width: 59%;
+    width: 65%;
 }
 
 .own_menu {
     margin: 0 auto;
     height: 300px;
-    background-color: black;
     display: inline-block;
     width: 39%;
 }
@@ -115,6 +113,7 @@ img {
         margin: 0;
         padding: 20px;
     }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -173,6 +172,15 @@ img {
         width: 100%;
         margin-top: 10px;
     }
+
+    .map_menu {
+        margin: 30px auto;
+        margin-left: 30px;
+        height: 100px;
+        display: inline-block;
+        width: 65%;
+    }
+
 }
 
 @media screen and (max-device-width: 1024px) {
@@ -188,3 +196,4 @@ img {
         width: 45%;
     }
 }
+
