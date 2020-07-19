@@ -88,6 +88,10 @@ img {
     width: 100%;
     height: 100%;
 }
+.gotosw{
+    width: 5vw;
+    height:17vh;
+}
 
 @media screen and (max-width: 1265px) {
     .header {
